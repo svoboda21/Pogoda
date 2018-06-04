@@ -19,11 +19,11 @@
     ?>
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Данные о погоде</title>
-</head>
-<body>
+  </head>
+  <body>
 <?php
     echo $city . " - " .$date . "<br>";?>
     Температура: <?php echo(!empty($temp)) ? " $temp &deg;C<br>" : 'не удалось получить температуру';?>
@@ -31,5 +31,5 @@
     Давление: <?php echo (!empty($pressure)) ? "$pressure  мм рт ст <br>" : 'не удалось получить данные по давлению' ; ?>
     <?php echo "<img src='http://openweathermap.org/img/w/" . $icon ."'/ >"; ?>
 
-</body>
+  </body>
 </html>
