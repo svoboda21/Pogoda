@@ -1,7 +1,7 @@
 <?php
     $file = "http://api.openweathermap.org/data/2.5/weather?id=524901&lang=ru&units=metric&APPID=39679d58e311e94a32d72cb553735dcc";
     $string=file_get_contents ($file);
-    file_put_contents("c:\prog\m.txt", $string);
+ // file_put_contents("c:\prog\m.txt", $string);
     $pogoda = json_decode($string);
     $temp=$pogoda->main->temp;
     $davl=$pogoda->main->pressure;
